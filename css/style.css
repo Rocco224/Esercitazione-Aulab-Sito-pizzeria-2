@@ -1,0 +1,21 @@
+body {
+    font-family: 'Shantell Sans', cursive;
+}
+
+#chi-siamo img {
+    box-shadow: 0px 0px 50px black;
+}
+
+@media screen and (max-width: 768px){
+    #chi-siamo {
+        flex-direction: column-reverse;
+    }
+}
+
+#carouselExampleCaptions {
+    box-shadow: 0px 0px 50px black;
+}
+
+#menu img {
+    height: 700px;
+}

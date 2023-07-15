@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizzeria bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+</head>
+
+<!--navbar-->
+<body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-5 text-light" href="#">Lo stivale</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#chi-siamo">Chi siamo</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#contatti">Contatti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--header-->
+    <header>
+        <img class="img-fluid w-100 vh-100 position-relative" src="./img/header.jpg" alt="immagine pizza">
+        <div class="position-absolute top-50 start-0 translate-middle-y ps-5">
+            <h1 class="display-3">Lo stivale</h1>
+            <p>
+                Regaliamo piacere esaltando gusto e semplicità, crediamo che una vita più gustosa sia una vita migliore.
+            </p>
+        </div>
+    </header>
+
+    <!--Chi siamo-->
+    <section class="container">
+
+        <hr class="mt-5">
+
+        <div class="row py-5" id="chi-siamo">
+            <div class="col-12 col-md-6">
+                <img class="img-fluid" src="./img/chi-siamo.avif" alt="">
+            </div>
+            <div class="col 12 col-md-6">
+                <article class="mx-5">
+                    <h2 class="text-center pb-2">Chi siamo</h2>
+                    <p>
+                        Nel nostro Ristorante puntiamo sulla qualità dei prodotti da offrire alla clientela. Per noi la
+                        scelta di Materie Prime Selezionate è fondamentale per creare i Nostri Piatti. La scelta degli
+                        ingredienti insieme ad un pizzaiolo con esperienza pluriennale è la formula giusta per
+                        realizzare una pizza ottima e gustosa.
+                    </p>
+                </article>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--menu-->
+        <div class="row py-5 justify-content-center" id="menu">
+            <div class="col-12 w-75">
+                <h2 class="text-center pb-3">Menu</h2>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/margherita.jpg" class="d-block w-100 shadow" alt="...">
+                            <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50">
+                                <h5>Margherita</h5>
+                                <p>Pomodoro, mozzarella, olio, basilico €5.00</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/marinara.png" class="d-block w-100 shadow" alt="...">
+                            <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50">
+                                <h5>Marinara</h5>
+                                <p>Pomodoro, Aglio, Origano, Basilico €5.00</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/diavola.jpg" class="d-block w-100 shadow" alt="...">
+                            <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50">
+                                <h5>Diavola</h5>
+                                <p>Pomodoro, Mozzarella, ’Nduja, Salame piccante €6.00</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/capricciosa.jpg" class="d-block w-100 shadow" alt="...">
+                            <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50">
+                                <h5>Capricciosa</h5>
+                                <p>Pomodoro, Mozzarella, Carciofi, Capperi, Acciughe, Olive, Origano €6.50</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/4stagioni.jpg" class="d-block w-100 shadow" alt="...">
+                            <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50">
+                                <h5>4 Stagioni</h5>
+                                <p>Pomodoro, mozzarella, carciofi, prosciutto cotto, champignon €6.50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+    </section>
+
+    <!--Contatti-->
+    <section class="container pt-5" id="contatti">
+        <h2 class="text-center pb-2">Contatti</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 w-50 ">
+                <p class="pb-2">
+                    Vi attendiamo in un ambiente familiare e confortevole. E allora che aspetti.... vieni a trovarci!
+                </p>
+                <ul class="list-group pb-2">
+                    <li class="list-group-item bg-dark-subtle" aria-current="true">Città</li>
+                    <li class="list-group-item">10122 Torino TO</li>
+                    <li class="list-group-item bg-dark-subtle">Via</li>
+                    <li class="list-group-item">Torquato Tasso n.5</li>
+                    <li class="list-group-item bg-dark-subtle">Telefono</li>
+                    <li class="list-group-item">01119585395</li>
+                    <li class="list-group-item bg-dark-subtle">E-mail</li>
+                    <li class="list-group-item">pizzerialostivale@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-12 w-50 pt-3">
+                <p class="pb-2">
+                    Oppure prenota un tavolo usando il bottone qua sotto!
+                </p>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    Prenota
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Inserisci le seguenti
+                                    informazioni:</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <input class="w-100" type="text" placeholder="Nome">
+                                    <input class="w-100" type="text" placeholder="Quante persone">
+                                    <input class="w-100" type="datetime-local">
+                                    <input class="w-100" type="text" placeholder="Messaggio/Richieste speciali">
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Invia</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-5">
+
+    </section>
+
+    <!--footer-->
+    <footer class="bg-dark mt-5 ">
+        <p class="text-center p-5 text-light mb-0">Creato da Rocco Clemente</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
